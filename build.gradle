@@ -1,0 +1,49 @@
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // https://mvnrepository.com/artifact/com.healthmarketscience.jackcess/jackcess
+    implementation group: 'com.healthmarketscience.jackcess', name: 'jackcess', version: '3.0.0'
+    // https://mvnrepository.com/artifact/javax.mail/javax.mail-api
+    implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    // https://mvnrepository.com/artifact/commons-logging/commons-logging
+    implementation group: 'commons-logging', name: 'commons-logging', version: '1.2'
+    // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+    testImplementation group: 'org.hsqldb', name: 'hsqldb', version: '2.6.0'
+    // https://mvnrepository.com/artifact/javax.activation/javax.activation-api
+    implementation group: 'javax.activation', name: 'javax.activation-api', version: '1.2.0'
+    // https://mvnrepository.com/artifact/net.sf.ucanaccess/ucanaccess
+    implementation group: 'net.sf.ucanaccess', name: 'ucanaccess', version: '5.0.1'
+    // https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+    implementation group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0'
+
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'Swish.Controllers.Start'
+}
+
+javafx{
+    version = "15.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.graphics', 'javafx.base']
+}
+
+test {
+    useJUnitPlatform()
+}

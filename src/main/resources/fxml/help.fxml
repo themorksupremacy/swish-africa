@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Swish.Controllers.CustomerDashboard">
+   <children>
+      <Label layoutX="59.0" layoutY="14.0" text="Here To Assist You">
+         <font>
+            <Font name="Bodoni MT Black" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtHelp" layoutX="13.0" layoutY="39.0" prefHeight="414.0" prefWidth="290.0" text="                      General Info&#10;&gt;Swish Africa is an application for shopping online - stocking all essentials for school and university.&#10;&#10;&gt; All payments are made in person when the item is delivered.&#10;&#10;&gt; We are based in South Africa and deliver to multiple other African countries.&#10;&#10;&#10;              Application Assistance&#10;&gt; To reset your password at the starting screen an internet connection is required.&#10;&#10;&gt; To find products either select one of the 5 available catgories on the left or use the search bar and button at the top of the window.&#10;&#10;&gt; To change your account details click on &quot;Account&quot; on the left panel and select &quot;Edit Account&quot;.&#10;&#10;&gt;To add an address/change your address click on &quot;Account&quot; on the left panel and select &quot;Edit Account&quot;.&#10;&#10;&gt; Products can be added to your cart after you have viewed the product.&#10;&#10;&gt;Item limit for the cart is 25." wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
